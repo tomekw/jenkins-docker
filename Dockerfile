@@ -4,6 +4,8 @@ MAINTAINER Tomek Wałkuski <ja@jestem.tw>
 
 WORKDIR /opt
 
+ENV JENKINS_HOME /var/jenkins
+
 VOLUME /var/jenkins
 
 RUN apk --update --no-cache add git openjdk8-jre ttf-dejavu openssh-client \
